@@ -1,0 +1,90 @@
+<!--  --><!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<h2>JavaScript getMonth()</h2>
+<p>Return the month as a number.</p>
+<p>You can use an array of names to return the month as a name:</p>
+
+<p id="demo"></p>
+
+<script>
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const d = new Date("2022-11-21");
+let month = months[d.getMonth()];
+document.getElementById("demo").innerHTML = month;
+</script>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<h2>The getTime() Method</h2>
+<p></p>
+<p>Return the number of milliseconds since midnight July 14, 2002:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date("2002-07-14");
+document.getElementById("demo").innerHTML = d.getTime();
+</script>
+
+</body>
+</html -->> -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Dates</h1>
+<h2>Using Date.now()</h2>
+<p>Calculate the number of years since July 14, 2002:</p>
+
+<p id="demo"></p>
+
+<script>
+// Calculate milliseconds in a year
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+// Divide Date.now() with a year
+//let years = Math.round(Date.now() / year);
+
+document.getElementById("demo").innerHTML = d.getFullYear();
+
+</script>
+
+</body>
+</html>
+
+ -->
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Dates</h1>
+<h2>Using Date.now()</h2>
+Calculate the number of years since July 14, 2002:
+
+<p id="demo"></p>
+
+<script>
+// Calculate milliseconds in a year
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+document.querySelector('ul').addEventListener('click', handleClickDeleteOrCheck);
+// Divide Date.now() with a year
+let years = Math.round(Date.now() / year);
+document.getElementById("demo").innerHTML = years;
+
+</script>
+
+</body>
+</html>
